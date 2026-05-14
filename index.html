@@ -1,870 +1,539 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
-<!--Designed by: Abhishek Sugam-->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Abhishek Sugam </title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.ico">
-
-    <!--Google Font link-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/fonticons.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/bootsnav.css">
-
-
-    <!--For Plugins external css-->
-    <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
-
-    <!--Theme custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
-
-    <!--Theme Responsive css-->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-
-    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Sugam | Product Design Lead & Systems Architect</title>
+    <meta name="description" content="Product Design Lead and Systems Architect specializing in consumer electronics. Turning early ideas into viable products at Amazon, Microsoft, and beyond.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/modern.css">
 </head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-<body data-spy="scroll" data-target=".navbar-collapse">
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">AS</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#timeline">Experience</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-
-    <!-- Preloader -->
-    <div id="loading">
-        <div id="loading-center">
-            <div id="loading-center-absolute">
-                <div class="object" id="object_one"></div>
-                <div class="object" id="object_two"></div>
-                <div class="object" id="object_three"></div>
-                <div class="object" id="object_four"></div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-in">Product Design Lead & Systems Architect</div>
+            <h1 class="hero-title animate-in">
+                Hi, I'm <span class="gradient-text">Abhishek Sugam</span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                I take ideas from napkin sketches to mass production -- architecting consumer electronics that millions of people bring into their lives.
+            </p>
+            <div class="hero-cta animate-in">
+                <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                <a href="#products" class="btn btn-ghost">View My Work</a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">11+</span>
+                    <span class="stat-label">Products Shipped</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100M+</span>
+                    <span class="stat-label">Users Impacted</span>
+                </div>
             </div>
         </div>
-    </div>
-    <!--End off Preloader -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-
-    <div class="culmn">
-        <!--Home page style-->
-
-
-        <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
-            <!-- Start Top Search -->
-            <div class="top-search">
-                <div class="container">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-                    </div>
-                </div>
-            </div>
-            <!-- End Top Search -->
-
-            <div class="container">
-                
-
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    <a class="navbar-brand" href="#brand">
-
-                        <img src="assets/images/logo1.png" class="logo logo-display m-top-10" alt="">
-                        <img src="assets/images/logo.png" class="logo logo-scrolled" alt="">
-                        <a href="#hello"></a>
-
-                    </a>
-                </div>
-                <!-- End Header Navigation -->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li><a href="#hello">Hello</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skillset">Skillset</a></li>
-                        <!--<li><a href="#portfolio">Portfolio</a></li>-->
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-
-
-
-        </nav>
-
-
-        <!--Home Sections-->
-
-        <section id="hello" class="home bg-mega">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="main_home">
-                        <div class="home_text">
-                            <h1 class="text-white">Hello! I'm Abhishek, <br /> Nice to meet you. </h1>
-                        </div>
-
-                        <div class="home_btns m-top-40">
-                            <a href="https://www.linkedin.com/in/abhisheksugam/" target="#contact" class="btn btn-primary m-top-20">CONNECT</a>
-                            <a href="https://1drv.ms/b/s!AkON9XOg8u3Bxtoc00-Vfzv_HdzATw?e=tCBZAD" target="_blank" class="btn btn-default m-top-20">RESUME</a>
-                            <a href="https://sway.office.com/EGiDRK5gnXbvECAa" target="#contact" class="btn btn-primary m-top-20">PORTFOLIO</a>
-                        </div>
-
-                    </div>
-                </div>
-                <!--End off row-->
-            </div>
-            <!--End off container -->
-        </section>
-        <!--End off Home Sections-->
-
-
-        <!--About Sections-->
-        <section id="about" class="about roomy-10">
+    <!-- About Section -->
+    <section id="about" class="section about">
         <div class="container">
-            <div class="row">
-                <div class="main_featured m-top-100">
-                    <div class="col-sm-12">
-                        <div class="head_title text-center">
-                            <h2>WHO AM I? </h2>
-                            <div class="separator_auto"></div>
-                        </div>
+            <div class="section-header">
+                <span class="section-tag animate-in">About Me</span>
+                <h2 class="section-title animate-in">Engineer. Builder. Problem Solver.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-photo animate-in">
+                    <div class="photo-frame">
+                        <img src="assets/images/1718215225568.jpg" alt="Abhishek Sugam">
+                    </div>
+                </div>
+                <div class="about-text animate-in">
+                    <p class="about-lead">
+                        I'm a Product Design Lead and Systems Architect who transforms early-stage ideas into products that ship at scale.
+                    </p>
+                    <p>
+                        I live in the space between a napkin sketch and a million-unit production line. At <strong>Amazon</strong>, I lead product design for Alexa-powered devices -- defining system architecture, orchestrating cross-functional teams, and making the thousands of decisions that turn a bold concept into something you can unbox and fall in love with.
+                    </p>
+                    <p>
+                        My craft is taking ambiguity and turning it into clarity: translating customer needs into mechanical architectures, resolving impossible trade-offs between form and function, and relentlessly iterating until every detail earns its place. From first principles through final tooling, I own the full arc of bringing hardware to life.
+                    </p>
+                    <div class="about-links">
+                        <a href="https://www.linkedin.com/in/abhisheksugam/" target="_blank" class="btn btn-primary">LinkedIn Profile</a>
+                        <a href="https://github.com/abhisheksugam" target="_blank" class="btn btn-ghost">GitHub</a>
+                    </div>
+                </div>
+                <div class="about-cards animate-in">
+                    <div class="info-card">
+                        <div class="info-card-icon">&#127891;</div>
+                        <h4>MS, Mechanical Engineering</h4>
+                        <p>University of Washington, Seattle<br>GPA: 3.63/4.0</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">&#127891;</div>
+                        <h4>BE, Mechanical Engineering</h4>
+                        <p>Birla Institute of Technology, Mesra<br>First Class with Distinction</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-            <div class="container">
-                <div class="row">
-                    <div class="main_about">
-                        <div class="col-md-6">
-                            <div class="about_content">                    
-                                <p align="justify">I am a Product Design Engineer, focused on Consumer Electronics. I work on product architecture definition, Own Top level Assemblies and drive products from concept to MP </p> <p align="justify"> I am a product UW & BIT Alumni with a passion in consumer electronics and sustainable design as a means to optimize resources while delivering brilliant experiences to customers. I currently work on Alexa powered Devices team at Amazon where I develop cutting edge devices for millions of people.</p> <p align="justify"> </p> <p align="justify"> I would like to use my skills and experience to add value to an organization that is looking for a proven Engineer.</p>
-                    
-                                <div class="about_btns m-top-40">
-                                    <a href="https://1drv.ms/b/s!AkON9XOg8u3Bxtoc00-Vfzv_HdzATw?e=tCBZAD"  target="_blank" class="btn btn-primary">DOWNLOAD RESUME</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="about_accordion wow fadeIn">
-                                <div id="faq_main_content" class="faq_main_content">
+    </section>
 
-                                    
-                                    <h6><i class="fa fa-angle-right"></i> Products Designed</h6>
-                                    <div>
-                                        <div class="content">
-                                          <ul>
-                                                <li>Amazon Echo Show 15</li>
-                                                <li>Amazon Echo Dot</li>
-                                                <li>Amazon Echo Dot with clock</li>
-                                                <li>Amazon Echo Dot Kids Edition</li>
-                                                <li>Enlighted Surface Sensor</li>
-                                                <li>Enlighted 1U Asset Tag</li>
-                                                <li>Enlighted B7 Button Wristband</li>
-                                                <li> Microsoft Surface Hub 2S</li>
-                                                <li> Microsoft Surface Hub 2S 85" </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End off accordion item-2 -->
-
-                                    <h6 class="open"><i class="fa fa-angle-right"></i> Design Experience </h6>
-                                    <div class="open">
-                                        <div class="content">
-                                            <ul>
-                                                <li> Consumer Electronics product design </li>
-                                                <li> Audio Subsystem Design </li>
-                                                <li> Display OCR Cracterization & Mura Analysis </li>
-                                                <li> 3D Modelling & Tolerance analysis</li>
-                                                <li> Injection Molding, Die Casting</li>
-                                            </ul>
-
-                                        </div>
-                                    </div>
-                                    <!-- End off accordion item-1 -->
-
-
-                                    <h6><i class="fa fa-angle-right"></i> Data science </h6>
-                                    <div>
-                                        <div class="content">
-                                           <ul>
-                                               <li> Machine learing using Azure ML Studio</li>
-                                               <li> Monte Carlo Modelling</li>
-                                               <li> Extensive Data Analysis using Minitab</li>
-                                               <li> Capability Analysis</li>
-                                               <li> Design of Experiments</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End off accordion item-4 -->
-                                                                        
-                                    <h6><i class="fa fa-angle-right"></i> MS, University of Washington, Seattle </h6>
-                                    <div>
-                                        <div class="content">
-                                           <ul>
-                                            <li> Master of Science, Mechanical Engineering</li>
-                                               <li> September 2015 - December 2017 </li>
-                                               <li> GPA: 3.63/4</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End off accordion item-A -->
-                                    <h6><i class="fa fa-angle-right"></i> BE, Birla Institute of Technology, Mesra, India </h6>
-                                    <div>
-                                        <div class="content">
-                                           <ul>
-                                            <li> Bachelor of Engineering, Mechanical Engineering</li>
-                                               <li> August 2011 : May 2015 </li>
-                                               <li> First Class with Distinction </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End off accordion item-B -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Product Journey Section -->
+    <section class="section journey-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-in">Process</span>
+                <h2 class="section-title animate-in">From Spark to Scale</h2>
+                <p class="section-subtitle animate-in">Every product I build travels this path.</p>
+            </div>
+            <div class="journey-track animate-in">
+                <div class="journey-line"></div>
+                <div class="journey-step">
+                    <div class="journey-node"></div>
+                    <div class="journey-icon">&#128161;</div>
+                    <h4>Ideation</h4>
+                    <p>Customer needs, white-space exploration, feasibility</p>
                 </div>
-                <!--End off row-->
-            </div>
-            <!--End off container -->
-           
-            <br/>
-        </section>
-        <!--End off About section -->
-
-
-
-
-        <!--SKILLSET Section-->
-        <section id="skillset" class="service lightbg">
-            <div class="container">
-                <div class="row">
-                    <div class="main_service roomy-100">
-                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                            <div class="head_title text-center">
-                               <h2>What do I do?</h2>
-                                <div class="separator_auto"></div>
-                                <p>This is what I am best at.<br/> I mightnot always know the right answer, but I sure know how to find them ! </p>
-                            </div>
-                        </div>
-
-                        <div class="container">
-                <div class="row">
-                    <div class="about_bottom_content">
-                        <div class="col-md-4">
-                            <div class="about_bottom_item m-top-20">
-                                <div class="ab_head">
-                                     <div class="ab_head_icon">
-                                       <img src="assets/images/logo/car.png"> 
-                                </div>
-                                     <h6 class="m-top-20">AUTOMOTIVE DESIGN</h6>
-                                </div>
-                                <p class="m-top-20" align="justify" >I enjoy working on automotive design, Transmission, suspension and chassis design, structural analysis, FEA, crash tests, manufacturing and assembly of various automotive components and systems  </p>
-                                </div>
-                            
-                        </div>
-                        
-                        
-                        <div class="col-md-4">
-                            <div class="about_bottom_item m-top-20">
-                                <div class="ab_head">
-                                    <div class="ab_head_icon">
-                                        <img src="assets/images/logo/fea.png"> 
-                                    </div>
-                                    <h6 class="m-top-20">CAD and FINITE ELEMENT ANALYSIS</h6>
-                                </div>
-                                <p class="m-top-20"  align="justify"> I have more than four years of Academic CAD, 3D Modelling and Finite Element analysis experience. I have worked on products ranging from small robots and consumer products to Formula Cars </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="about_bottom_item m-top-20">
-                                <div class="ab_head">
-                                    <div class="ab_head_icon">
-                                        <img src="assets/images/logo/dev.png"> 
-                                    </div>
-                                    
-                                   <h6 class="m-top-20"> PRODUCT DEVELOPMENT </h6>
-                                </div>
-                                <p class="m-top-20" align="justify" >I have worked on end-to-end product development starting from Ideation, feasibility analysis, 3D Modelling and structural optimizations. I love working on the rapid prototyping and creating a mass manufacturing strategy </p>
-                            
-                            
-                            </div>
-                        </div>
-                        
-                        
+                <div class="journey-step">
+                    <div class="journey-node"></div>
+                    <div class="journey-icon">&#128208;</div>
+                    <h4>Architecture</h4>
+                    <p>System definition, trade-off analysis, design intent</p>
                 </div>
-                <!--End off row-->
-            </div>
-            <!--End off container -->
-                            
-                            <div class="row">
-                    <div class="about_bottom_content">
-                        <div class="col-md-4">
-                            <div class="about_bottom_item m-top-20">
-                                <div class="ab_head">
-                                     <div class="ab_head_icon">
-                                       <img src="assets/images/logo/DS.png"> 
-                                </div>
-                                     <h6 class="m-top-20">DATA SCIENCE</h6>
-                                </div>
-                                <p class="m-top-20" align="justify" >I have studied software engineering for Data scientists at UW and have implemented the data science skills i.e. analytics and visulatization using python, R etc  </p>
-                                </div>
-                            
-                        </div>
-                        
-                        
-                        <div class="col-md-4">
-                            <div class="about_bottom_item m-top-20">
-                                <div class="ab_head">
-                                    <div class="ab_head_icon">
-                                        <img src="assets/images/logo/ml.png"> 
-                                    </div>
-                                    <h6 class="m-top-20">MACHINE LEARNING</h6>
-                                </div>
-                                <p class="m-top-20"  align="justify"> I work on Bayesian and Applied Statistics, Experimental Design, Prediction Algorithms, Azure ML. I  have also implemented prediction algorithms using Azure ML  </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="about_bottom_item m-top-20">
-                                <div class="ab_head">
-                                    <div class="ab_head_icon">
-                                        <img src="assets/images/logo/r.png"> 
-                                    </div>
-                                    
-                                   <h6 class="m-top-20"> ROBOTICS and IOT </h6>
-                                </div>
-                                <p class="m-top-20" align="justify" >I have worked on various manual and autonomus bots for competitions l RoboWars to NASA Lunarbotics. I have used C , Windows IOT Core and Azure, Arduino and Raspberry Pi  to  run the robots and other IOT devices </p>
-                            
-                            
-                            </div>
-                        </div>
-                        
-                        
+                <div class="journey-step">
+                    <div class="journey-node"></div>
+                    <div class="journey-icon">&#9999;&#65039;</div>
+                    <h4>Design</h4>
+                    <p>3D modeling, simulation, tolerance stack-ups</p>
                 </div>
-                <!--End off row-->
-            </div>
-                    </div>
+                <div class="journey-step">
+                    <div class="journey-node"></div>
+                    <div class="journey-icon">&#128295;</div>
+                    <h4>Prototype</h4>
+                    <p>Rapid builds, functional validation, design iteration</p>
                 </div>
-                <!--End off row -->
-                
-            </div>
-            <!--End off container -->
-        </section>
-        <!--End off Featured section-->
-            
-             <div class="container">
-                 <div class="row">
-                    <div class="main_skill">
-                       
-                        <div class="skill_content wow fadeIn">
-                                <h5>My Skills</h5>
-                            <div class="separator_left"></div>
-                 <br/>
-                 <div class="col-md-6" class="separator_left">
-                            <div class="skill_bar sm-m-top-50">
-                                <div class="teamskillbar clearfix m-top-20" data-percent="99%">
-                                    <h6>CATIA / SolidWorks / PTC Creo</h6>
-                                    <div class="teamskillbar-bar"></div>
-                                </div>
-                                <!-- End Skill Bar -->
-
-                                <div class="teamskillbar clearfix m-top-50" data-percent="90%">
-                                    <h6> NX / Solid Edge</h6>
-                                    <div class="teamskillbar-bar"></div>
-                                </div>
-                                <!-- End Skill Bar -->
-
-                                <div class="teamskillbar clearfix m-top-50" data-percent="75%">
-                                    <h6>HTML5 / CSS3 / Javascript</h6>
-                                    <div class="teamskillbar-bar"></div>
-                                </div>
-                                <div class="teamskillbar clearfix m-top-50" data-percent="80%">
-                                    <h6>C / C#/ Java</h6>
-                                    <div class="teamskillbar-bar"></div>
-                                </div>
-                                <!-- End Skill Bar -->
-                            </div>
-                        </div>
-                 <div class="col-md-6" class="separator_left">
-                            <div class="skill_bar sm-m-top-50">
-                                <div class="teamskillbar clearfix m-top-20" data-percent="97%">
-                                    <h6>ANSYS / Hyperworks / MatLab </h6>
-                                    <div class="teamskillbar-bar"></div>
-                                </div>
-                                <!-- End Skill Bar -->
-
-                                <div class="teamskillbar clearfix m-top-50" data-percent="90%">
-                                    <h6>AutoCAD / REVIT / Navisworks</h6>
-                                    <div class="teamskillbar-bar"></div>
-                                </div>
-                                <!-- End Skill Bar -->
-
-                                <div class="teamskillbar clearfix m-top-50" data-percent="70%">
-                                    <h6>Python / GIT / R Studio</h6>
-                                    <div class="teamskillbar-bar"></div>
-                                </div>
-                                <div class="teamskillbar clearfix m-top-50" data-percent="90%">
-                                    <h6>Windows IoT Core / Azure / Azure ML</h6>
-                                    <div class="teamskillbar-bar"></div>
-                                </div>
-                                <!-- End Skill Bar -->
-                            </div>
-                        </div>
-                
-            </div>
-                        </div>
-                     </div>
-                 </div>
-         <br />
-            <div class="container">
-                <div class="row">
-                    <div class="skill_bottom_content text-center">
-                        <div class="col-md-3">
-                            <div class="skill_bottom_item">
-                                <h2 class="statistic-counter">4.5</h2>
-                                <div class="separator_small"></div>
-                                <h5><em>Years of Academic Experience</em></h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="skill_bottom_item">
-                                <h2 class="statistic-counter">1.8</h2>
-                                <div class="separator_small"></div>
-                                <h5><em>Years of Professional experience</em></h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="skill_bottom_item">
-                                <h2 class="statistic-counter">15</h2>
-                                <div class="separator_small"></div>
-                                <h5><em>Design, Analysis and Manufacturing  projects</em></h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="skill_bottom_item">
-                                <h2 class="statistic-counter">9</h2>
-                                <div class="separator_small"></div>
-                                <h5><em>Software development and Data Science Projects</em></h5>
-                            </div>
-                        </div>
-                    </div>
+                <div class="journey-step">
+                    <div class="journey-node"></div>
+                    <div class="journey-icon">&#9881;&#65039;</div>
+                    <h4>Tooling</h4>
+                    <p>DFM optimization, vendor collaboration, tool trials</p>
                 </div>
-                <!--End off row-->
-            </div>
-            <!--End off container --> 
-     
-            
-
-      <!--Portfolio Section-->
-       <!--   <section id="portfolio" class="service lightbg">
-            <div class="container">
-                <div class="row">
-                    <div class="main_portfolio roomy-100">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="head_title text-center">
-                                <h2>PORTFOLIO</h2>
-                                <div class="separator_auto"></div>
-                                <p>I have worked on a wide range of projects be it medical device development, automotive design, Finite element analysis or data science, here are a few of the projects that I have worked on.</p>
-                            </div>
-                        </div>
-
-                        <div class="portfolio_content">
-                            <div class="col-md-8">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="portfolio_item">
-                                            <img src="assets/images/Portfolio/2.jpg" alt="" />
-                                            <div class="portfolio_hover text-center">
-                                                <h6 class="text-uppercase text-white">Title</h6>
-                                                <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                                <div class="portfolio_hover_icon">
-                                                    <a href="assets/images/Portfolio/2.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                                    <a href=""><i class="fa fa-search"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 m-top-30">
-                                        <div class="portfolio_item portfolio_item2">
-                                            <img src="assets/images/Portfolio/3.jpg" alt="" />
-                                            <div class="portfolio_hover text-center">
-                                                <h6 class="text-uppercase text-white">Title</h6>
-                                                <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                                <div class="portfolio_hover_icon">
-                                                    <a href="assets/images/Portfolio/3.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                                    <a href=""><i class="fa fa-search"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 m-top-30">
-                                        <div class="portfolio_item portfolio_item2">
-                                            <img src="assets/images/Portfolio/5.jpg" alt="" />
-                                            <div class="portfolio_hover text-center">
-                                                <h6 class="text-uppercase text-white">Title</h6>
-                                                <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                                <div class="portfolio_hover_icon">
-                                                    <a href="assets/images/Portfolio/5.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                                    <a href=""><i class="fa fa-search"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="portfolio_item portfolio_item3 sm-m-top-30">
-                                    <img src="assets/images/Portfolio/1.jpg" alt="" />
-                                    <div class="portfolio_hover text-center">
-                                        <h6 class="text-uppercase text-white">Title</h6>
-                                        <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                        <div class="portfolio_hover_icon">
-                                            <a href="assets/images/Portfolio/1.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                            <a href=""><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 m-top-30">
-                                <div class="portfolio_item portfolio_item2">
-                                    <img src="assets/images/Portfolio/6.jpg" alt="" />
-                                    <div class="portfolio_hover text-center">
-                                        <h6 class="text-uppercase text-white">Title</h6>
-                                        <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                        <div class="portfolio_hover_icon">
-                                            <a href="assets/images/Portfolio/6.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                            <a href=""><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-8 m-top-30">
-                                <div class="portfolio_item">
-                                    <img src="assets/images/Portfolio/4.jpg" alt="" />
-                                    <div class="portfolio_hover text-center">
-                                        <h6 class="text-uppercase text-white">Title</h6>
-                                        <p class=" text-white">Lorem ipsum dolor sit amet</p>
-                                        <div class="portfolio_hover_icon">
-                                            <a href="assets/images/Portfolio/4.jpg" class="popup-img"><i class="fa fa-expand"></i></a>
-                                            <a href=""><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> -->
-                <!--End off row -->
-          <!--  </div> -->
-            <!--End off container -->
-       <!-- </section> -->
-        <!-- End off Portfolio section-->
-
-        <!--Testimonial Section-->
-      <!--  <section id="testimonial" class="testimonial fix">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="main_testimonial roomy-100">
-                        <div class="head_title text-center">
-                            <h2 class="text-white">TESTIMONIALS</h2>
-                        </div>
-                        <div class="testimonial_slid text-center">
-                            <div class="testimonial_item">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                        lobortis nisl ut aliquip ex ea commodo consequat. </p>
-
-                                    <div class="test_authour m-top-30">
-                                        <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial_item">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                        lobortis nisl ut aliquip ex ea commodo consequat. </p>
-
-                                    <div class="test_authour m-top-30">
-                                        <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial_item">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                        lobortis nisl ut aliquip ex ea commodo consequat. </p>
-
-                                    <div class="test_authour m-top-30">
-                                        <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial_item">
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                        lobortis nisl ut aliquip ex ea commodo consequat. </p>
-
-                                    <div class="test_authour m-top-30">
-                                        <h6 class="text-white m-bottom-20">JOHN DOE - THEMEFOREST USER</h6>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="journey-step">
+                    <div class="journey-node"></div>
+                    <div class="journey-icon">&#127981;</div>
+                    <h4>Mass Production</h4>
+                    <p>Ramp, quality control, millions of units shipped</p>
                 </div>
-                <!--End off row-->
             </div>
-            <!--End off container -->
-        </section>
-        <!--End off Testimonial section --> -->
-            
-
-
-        
-
-
-        <!--client brand section-->
-        <section id="cbrand" class="cbrand">
-            <div class="container">
-                <div class="row">
-                    <div class="main_cbrand text-center roomy-100">
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/microsoft.png">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/sms.png">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/ubi.png">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/w.png">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/uweco.png">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/sae.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/tata.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/hitachi.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/essar.png">
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/baja.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/supra.jpg">
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="cbrand_item m-bottom-10">
-                                <img src="assets/images/logo/ecocar.jpg">
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <!-- End off row -->
-            </div>
-            <!-- End off container -->
-        </section>
-        <!-- End off Cbrand section -->
-
-
-
-      <!--Contact Us Section-->
-        <section id="contact" class="contact bg-mega fix">
-            <div class="container">
-                <div class="row">
-                    <div class="main_contact roomy-100 text-white">
-                        <div class="col-md-8 col-md-offset-2">
-                            
-                                <div class="wihead_title text-center">
-                                    <h3>Let's Talk</h3>
-                                    <div class="separator_auto"></div>
-                                                                
-                                <p> Are you looking for a Mechanical Design engineer with data science experience? Lets chat and see if my skills and experience are a good fit for your role.</p>
-                                <br>
-                                </div>
-                                <div class="col-lg-4 col-lg-offset-2 text-center">
-
-                                    <a href="tel:2534578873"><i class="fa fa-phone fa-3x sr-contact"></i></a>
-
-                                    <p>253-457-8873</p>
-
-                                </div>
-
-                                <div class="col-lg-4 text-center text-mcenter">
-
-                                    <a target="_blank" href="mailto:asugam@uw.edu"><i class="fa fa-envelope-o fa-3x sr-contact"></i></a>
-                                    <p>asugam@uw.edu</p>
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-8 col-md-offset-2">
-                                <div class="wihead_title text-center">
-                                <div class="widget_socail m-top-30">
-                                    <ul class="list-inline">
-                                        <li><a target="_blank" href="https://www.linkedin.com/in/abhisheksugam"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a target="_blank" href="https://github.com/abhisheksugam"><i class="fa fa-github"></i></a></li>
-                                        <li><a target="_blank" href="https://twitter.com/sugampixels"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a target="_blank" href="https://www.instagram.com/sugampixels/"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a target="_blank" href="https://www.facebook.com/sugampixels/"><i class="fa fa-facebook"></i></a></li>
-                                     </ul>
-                                </div>
-                            </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                <!--End off row -->
-            
-            <!--End off container -->
-        </section>
-        <!--End off Contact Section-->
-
-
-        <!-- scroll up-->
-        <div class="scrollup">
-            <a href="#"><i class="fa fa-chevron-up"></i></a>
         </div>
-        <!-- End off scroll up -->
+    </section>
 
-
-        <footer id="footer" class="footer bg-black">
-            <div class="container">
-                <div class="row">
-                    <div class="main_footer text-center p-top-40 p-bottom-30">
-                        <p class="wow fadeInRight" data-wow-duration="1s">
-                            Made with
-                            <i class="fa fa-heart"></i> by
-                            <a target="_blank" href="https://www.linkedin.com/in/abhisheksugam/">Abhishek Sugam</a> 2017. All Rights Reserved
-                        </p>
+    <!-- Timeline Section -->
+    <section id="timeline" class="section timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-in">Career</span>
+                <h2 class="section-title animate-in">Where I've Built Things</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - Present</div>
+                        <h3>Amazon - Alexa Devices</h3>
+                        <p class="timeline-role">Senior Product Design Engineer</p>
+                        <p>Owning top-level product architecture for Alexa-powered devices. Driving products from concept through mass production for millions of customers worldwide.</p>
+                        <div class="timeline-tags">
+                            <span>Echo Show 8/11</span>
+                            <span>Echo Show 21</span>
+                            <span>Echo Show 15</span>
+                            <span>Echo Dot</span>
+                            <span>Echo Dot with Clock</span>
+                            <span>Echo Dot Kids</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019 - 2021</div>
+                        <h3>Siemens</h3>
+                        <p class="timeline-role">Mechanical Design Engineer</p>
+                        <p>Designed IoT sensor products for smart building solutions. Developed miniaturized sensor housings and wearable asset tracking devices.</p>
+                        <div class="timeline-tags">
+                            <span>Surface Sensor</span>
+                            <span>1U Asset Tag</span>
+                            <span>B7 Wristband</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2019</div>
+                        <h3>Microsoft - Surface Engineering</h3>
+                        <p class="timeline-role">Mechanical Engineer</p>
+                        <p>Designed mechanical systems for Surface Hub 2S product line. Worked on display systems, thermal management, and structural architecture for large-format interactive displays.</p>
+                        <div class="timeline-tags">
+                            <span>Surface Hub 2S</span>
+                            <span>Surface Hub 2S 85"</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item animate-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2015 - 2017</div>
+                        <h3>University of Washington</h3>
+                        <p class="timeline-role">MS, Mechanical Engineering</p>
+                        <p>Specialized in product design, data science for engineers, and advanced manufacturing. Research in sustainable design and optimization.</p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
+    <!-- Products Section -->
+    <section id="products" class="section products-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-in">Portfolio</span>
+                <h2 class="section-title animate-in">Products I've Shipped</h2>
+                <p class="section-subtitle animate-in">Devices designed for scale -- from concept to millions of units.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Echo Show 8/11">
+                        <img src="assets/images/products/echo-show-8.jpg" alt="Echo Show 8" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Echo Show 8/11</h3>
+                        <p>Next-gen smart displays with reimagined design language, improved audio, and enhanced smart home integration.</p>
+                        <span class="product-company">Amazon</span>
+                    </div>
+                </div>
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Echo Show 21">
+                        <img src="assets/images/products/echo-show-21.png" alt="Echo Show 21" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Echo Show 21</h3>
+                        <p>21" wall-mounted smart display. Largest Echo Show form factor with immersive visual and audio experience.</p>
+                        <span class="product-company">Amazon</span>
+                    </div>
+                </div>
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Echo Show 15">
+                        <img src="assets/images/products/echo-show-15.jpg" alt="Echo Show 15" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Echo Show 15</h3>
+                        <p>Wall-mounted 15.6" smart display. Owned product architecture and drove mechanical design through MP.</p>
+                        <span class="product-company">Amazon</span>
+                    </div>
+                </div>
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Echo Dot">
+                        <img src="assets/images/products/echo-dot.jpg" alt="Echo Dot" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Echo Dot (Gen 5)</h3>
+                        <p>Spherical smart speaker redesign. Audio subsystem design and enclosure engineering.</p>
+                        <span class="product-company">Amazon</span>
+                    </div>
+                </div>
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Echo Dot Clock">
+                        <img src="assets/images/products/echo-dot-clock.jpg" alt="Echo Dot with Clock" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Echo Dot with Clock</h3>
+                        <p>LED display integration into compact spherical form factor with thermal and optical optimization.</p>
+                        <span class="product-company">Amazon</span>
+                    </div>
+                </div>
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Echo Dot Kids">
+                        <img src="assets/images/products/echo-dot-kids.jpg" alt="Echo Dot Kids Edition" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Echo Dot Kids Edition</h3>
+                        <p>Kid-friendly design with enhanced durability requirements and playful aesthetics.</p>
+                        <span class="product-company">Amazon</span>
+                    </div>
+                </div>
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Surface Hub 2S">
+                        <img src="assets/images/products/surface-hub-2s.jpg" alt="Surface Hub 2S" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Surface Hub 2S</h3>
+                        <p>50" collaborative display with innovative tilt-hinge mechanism and ultra-thin bezel design.</p>
+                        <span class="product-company">Microsoft</span>
+                    </div>
+                </div>
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Surface Hub 2S 85&quot;">
+                        <img src="assets/images/products/surface-hub-85.jpg" alt="Surface Hub 2S 85 inch" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Surface Hub 2S 85"</h3>
+                        <p>Scaled-up large format display with structural challenges at unprecedented size for the category.</p>
+                        <span class="product-company">Microsoft</span>
+                    </div>
+                </div>
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Surface Sensor">
+                        <img src="assets/images/products/enlighted-sensor.webp" alt="Enlighted Surface Sensor" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Enlighted Surface Sensor</h3>
+                        <p>Miniaturized IoT sensor for smart building occupancy and environmental monitoring.</p>
+                        <span class="product-company">Siemens</span>
+                    </div>
+                </div>
+                <div class="product-card animate-in">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img" data-placeholder="Asset Tag">
+                        <img src="assets/images/products/enlighted-tag.png" alt="Enlighted Asset Tag and Wristband" onerror="this.style.display='none'">
+                    </div>
+                    <div class="product-info">
+                        <h3>Enlighted Sensor Family & Asset Tags</h3>
+                        <p>Ultra-compact BLE asset tracking devices. 1U server tag and wearable wristband form factors.</p>
+                        <span class="product-company">Siemens</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-in">Expertise</span>
+                <h2 class="section-title animate-in">What I Bring to the Table</h2>
+            </div>
+            <div class="skill-tags-flat animate-in">
+                <span>System Architecture</span>
+                <span>Audio Subsystem Design</span>
+                <span>Display Integration</span>
+                <span>Optical Subassembly Design</span>
+                <span>GD&T</span>
+                <span>DFM / DFA</span>
+                <span>Injection Molding</span>
+                <span>Die Casting</span>
+                <span>SolidWorks</span>
+                <span>PTC Creo</span>
+                <span>ANSYS</span>
+                <span>FEA / CFD</span>
+                <span>Concept to MP</span>
+                <span>NMT</span>
+                <span>Camera Integration</span>
+                <span>Antenna Integration</span>
+                <span>Rapid Prototyping</span>
+                <span>Sustainable Design</span>
+                <span>Python</span>
+                <span>DOE</span>
+                <span>Monte Carlo Tolerance Analysis</span>
+                <span>Statistically Driven Design</span>
+                <span>SPC</span>
+                <span>Capability Analysis</span>
+            </div>
+        </div>
+    </section>
 
+    <!-- Exploring Section -->
+    <section class="section exploring-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-in">Looking Ahead</span>
+                <h2 class="section-title animate-in">What I'm Exploring</h2>
+                <p class="section-subtitle animate-in">The intersections that excite me right now.</p>
+            </div>
+            <div class="exploring-grid">
+                <div class="exploring-card animate-in">
+                    <div class="exploring-pulse"></div>
+                    <h4>GenAI in Hardware Design</h4>
+                    <p>Using generative AI to accelerate concept exploration, topology optimization, and design-space search at the earliest product stages.</p>
+                </div>
+                <div class="exploring-card animate-in">
+                    <div class="exploring-pulse"></div>
+                    <h4>Sustainable Materials & Circular Design</h4>
+                    <p>Rethinking material choices and end-of-life strategies to reduce environmental footprint without compromising product experience.</p>
+                </div>
+                <div class="exploring-card animate-in">
+                    <div class="exploring-pulse"></div>
+                    <h4>Ambient Computing & Spatial Interfaces</h4>
+                    <p>Designing hardware for the next wave of computing -- devices that blend into environments and respond to presence, not just touch.</p>
+                </div>
+                <div class="exploring-card animate-in">
+                    <div class="exploring-pulse"></div>
+                    <h4>Data-Driven Design Decisions</h4>
+                    <p>Leveraging field data, Monte Carlo simulation, and ML to make smarter trade-offs earlier in the product development cycle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <!-- Brands Section -->
+    <section class="section brands-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-in">Collaborations</span>
+                <h2 class="section-title animate-in">Companies & Organizations</h2>
+            </div>
+            <div class="brands-marquee animate-in">
+                <div class="brands-track">
+                    <div class="brand-item">
+                        <img src="assets/images/logo/amzn.jpg" alt="Amazon" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/microsoft.png" alt="Microsoft" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/sms.png" alt="Siemens" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/ubi.png" alt="UBI" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/w.png" alt="UW" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/uweco.png" alt="UW EcoCar" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/sae.jpg" alt="SAE" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/tata.jpg" alt="Tata" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/hitachi.jpg" alt="Hitachi" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/essar.png" alt="Essar" loading="lazy">
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="brand-item">
+                        <img src="assets/images/logo/amzn.jpg" alt="Amazon" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/microsoft.png" alt="Microsoft" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/sms.png" alt="Siemens" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/ubi.png" alt="UBI" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/w.png" alt="UW" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/uweco.png" alt="UW EcoCar" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/sae.jpg" alt="SAE" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/tata.jpg" alt="Tata" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/hitachi.jpg" alt="Hitachi" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="assets/images/logo/essar.png" alt="Essar" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- JS includes -->
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-in">Get in Touch</span>
+                <h2 class="section-title animate-in">Let's Build Something Together</h2>
+                <p class="section-subtitle animate-in">Whether you have an opportunity, a project idea, or just want to say hello -- I'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid animate-in">
+                <a href="mailto:abhisheksugam@outlook.com" class="contact-card">
+                    <div class="contact-card-icon">&#9993;</div>
+                    <h4>Email</h4>
+                    <p>abhisheksugam@outlook.com</p>
+                </a>
+                <a href="https://www.linkedin.com/in/abhisheksugam/" target="_blank" class="contact-card">
+                    <div class="contact-card-icon">&#128279;</div>
+                    <h4>LinkedIn</h4>
+                    <p>in/abhisheksugam</p>
+                </a>
+                <a href="https://github.com/abhisheksugam" target="_blank" class="contact-card">
+                    <div class="contact-card-icon">&#128187;</div>
+                    <h4>GitHub</h4>
+                    <p>abhisheksugam</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & built by Abhishek Sugam</p>
+        </div>
+    </footer>
 
-    <script src="assets/js/jquery.magnific-popup.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/jquery.collapse.js"></script>
-    <script src="assets/js/bootsnav.js"></script>
-
-
-    <!-- paradise slider js -->
-
-
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyD_tAQD36pKp9v4at5AnpGbvBUsLCOSJx8"></script>
-    <script src="assets/js/gmaps.min.js"></script>
-
-    <script>
-        function showmap() {
-            var mapOptions = {
-                zoom: 8,
-                scrollwheel: false,
-                center: new google.maps.LatLng(-34.397, 150.644),
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-            $('.mapheight').css('height', '350');
-            $('.maps_text h3').hide();
-        }
-    </script>
-
-
-
-
-
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    <script src="assets/js/modern.js"></script>
 </body>
-
 </html>
